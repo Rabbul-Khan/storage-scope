@@ -5,4 +5,11 @@ import manifest from "./manifest.config";
 
 export default defineConfig({
   plugins: [vue(), crx({ manifest })],
+  build: {
+    rollupOptions: {
+      input: {
+        panel: "panel.html",
+      },
+    },
+  },
 });

@@ -5,10 +5,6 @@ export default defineManifest({
   name: "Storage Scope",
   version: "1.0.0",
   description: "storage-scope",
-  action: {
-    default_popup: "popup.html",
-    default_title: "Storage Scope",
-  },
   background: {
     service_worker: "src/background/index.ts",
     type: "module",
